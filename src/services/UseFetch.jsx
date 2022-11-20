@@ -9,17 +9,8 @@ const UseFetch = (url) => {
        fetch(url)
         .then((res) => res.json())
         .then((user) => {
-            // setUsers((prev) => prev = [].push(user));
-            // setIsLoading(false);
-            // if( typeof user === "function") {
-                setUsers(user);
-                setIsLoading(false);
-                
-            // } else {
-            //     setUsers([].push(user));
-            //     setIsLoading(false);
-            //     console.log(user);
-            // }
+            setUsers(user);
+            setIsLoading(false);
         }).catch((err) => {
             console.log(err)
             setIsError(true);
