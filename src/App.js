@@ -6,7 +6,6 @@ import User from "./components/User";
 function App() {
   const [ searchText, setSearchText ] = useState("");
   const [ url, setUrl ] = useState("https://api.github.com/users");
-  // const navigate = useNavigate();
   
   const handleChange = (event) => {
     const value = event.target.value;

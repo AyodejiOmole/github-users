@@ -21,7 +21,6 @@ const Home = ({ url }) => {
             .catch((error) => {
                 console.log(error);
             });
-        // console.log(response);
         dispatch(setUsers(response.data))
     }
 
